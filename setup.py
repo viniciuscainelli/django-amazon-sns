@@ -22,7 +22,7 @@ setup(
     keywords = "django-amazon-sns",
     url = "https://github.com/viniciuscainelli/django-amazon-sns/",
     packages=['amazon_sns',],
-    long_description=read_file('README'),
+    long_description=read_file('README.md'),
     classifiers=[
         "Intended Audience :: Developers",
         "Topic :: Utilities",
