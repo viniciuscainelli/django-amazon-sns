@@ -7,7 +7,7 @@ except ImportError:
     use_setuptools()
     from setuptools import setup
 
-amazon_sns = __import__('commerce', {}, {}, [''])
+amazon_sns = __import__('amazon_sns', {}, {}, [''])
 
 def read_file(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
@@ -21,7 +21,7 @@ setup(
     license = "MIT",
     keywords = "django-amazon-sns",
     url = "https://github.com/viniciuscainelli/django-amazon-sns/",
-    packages=['django-amazon-sns',],
+    packages=['amazon_sns',],
     long_description=read_file('README'),
     classifiers=[
         "Intended Audience :: Developers",
